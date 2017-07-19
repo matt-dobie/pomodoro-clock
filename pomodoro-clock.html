@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matt Dobie | Pomodoro Clock</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="header" class="text-center">
+   <h1>Pomodoro Clock</h1>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div id="session" class="adjust">
+          <p>SESSION</p>
+          <span class="btn minus">-</span>
+          <span class="value">25</span>
+          <span class="btn plus">+</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div id="break" class="adjust">
+          <p>BREAK</p>
+          <span class="btn minus">-</span>
+          <span class="value">5</span>
+          <span class="btn plus">+</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="timer degree">
+          <span class="block"></span>
+          <span id="time">00:00</span>
+          <span class=label></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <span id="start" class="control fa fa-play"></span>
+        <span id="stop" class="control fa fa-stop"></span>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer class="subtitle fixed-bottom">by <a href="http://mattdobie.com" target="_blank">Matt Dobie</a></footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>

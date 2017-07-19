@@ -1,0 +1,149 @@
+$background: #111;
+$primary: #eee;
+$green: #5cb85c;
+$red: red;
+
+body {
+  position: relative;
+  background-color: $background;
+  font-family: "Helvetica", sans-serif;
+  color: $primary;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  display: none;
+}
+
+.adjust {
+  margin-top: 12vh;
+  p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  span {
+    font-size: 1.1em;
+    &.btn {
+      color: $primary;
+      cursor: pointer;
+    }
+  } 
+}
+
+.timer {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  background-color: $green;
+  border: 1px solid $green;
+  margin: 6vh auto;
+  .block {
+    position: absolute;
+    background: $background;
+    width: 190px;
+    height: 190px;
+    display: block;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+  }
+  .label {
+    position: absolute;
+    bottom: 24%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: $primary;
+  }
+}
+
+#time {
+  font-size: 3em;
+  position: absolute;
+  top: 29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: lighten(#000,60%);
+}
+
+.degree {
+  background-image:
+    linear-gradient(90deg, transparent 50%, $background 50%),
+    linear-gradient(90deg, $background 50%, transparent 50%);
+}
+
+.control {
+  margin: 5vh 7vw;
+  padding-bottom: 80px;
+  font-size: 25px;
+  &#start {
+    cursor: pointer;
+  }
+}
+
+.subtitle {
+  background-color: $background;
+  padding: 15px;
+  font-size: 0.9em;
+  a {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  
+  h1 {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-size: 1.5em;
+    font-family: "Raleway", "Helvetica", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .adjust {
+    margin-top: 0;
+    p {
+      font-size: 1em;
+    }
+    span {
+      font-size: 1.5em;
+      padding: 10px;
+    }
+  }
+
+  .timer {
+    margin: 1vh auto;
+  }
+
+  .control {
+    margin: 7vh 35px;
+    font-size: 30px;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  
+}
