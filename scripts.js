@@ -1,3 +1,9 @@
+/*
+  Author: Matthew Dobie
+  Author URL: mattdobie.com
+  Description: Script for Pomodoro Clock
+*/
+
 
 /* Global Variables */
 var totalTime;
